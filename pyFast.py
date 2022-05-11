@@ -1,11 +1,10 @@
 import datetime
 import mysql.connector
 from mysql.connector import errorcode
+import dbInfo
 
 try:
-       cnx = mysql.connector.connect(user='newuser', password='12Ab$%678',
-                              host='127.0.0.1',
-                              database='employees')
+       cnx = mysql.connector.connect(**dbInfo.config)
 except mysql.connector.Error as err:
   if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
     print("Something is wrong with your user name or password")
