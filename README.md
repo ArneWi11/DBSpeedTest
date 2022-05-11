@@ -1,7 +1,8 @@
 # DBSpeedTest
 Simple Test
 
-Requirements: MySql DB and the free employee Dataset.
+Requirements: MySql DB and the free employee Dataset:
+https://dev.mysql.com/doc/employee/en/employees-installation.html
 
 Dont forget to setup your Database Information in dbInfo.py!
 
@@ -10,8 +11,9 @@ To measure the execution time, use the following command:
 time python3 python.py 
 
 example:
+
     input:
-        time python3 pyFast.py
+        $ time python3 pyFast.py
 
     output:
         Number of Rows = 1514
