@@ -27,5 +27,6 @@ for (first_name, last_name, hire_date) in cursor:
         #print("{}, {} was hired on {:%d %b %Y}".format(
     #last_name, first_name, hire_date))
         i += 1
-print("Number of Rows =", i)      
+print("Number of Rows =", i)
+
 cursor.close()
