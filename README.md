@@ -1,5 +1,5 @@
 # DBSpeedTest
-Simple Test
+Simple Test between Python and MySql, to see if Python or SQL "if/where"-Statements are faster.
 
 Requirements: MySql DB and the free employee Dataset:
 https://dev.mysql.com/doc/employee/en/employees-installation.html
