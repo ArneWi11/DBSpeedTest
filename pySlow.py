@@ -21,12 +21,14 @@ hire_start = datetime.date(1999, 1, 1)
 hire_end = datetime.date(1999, 12, 31)
 
 cursor.execute(query)
-i= 0
+
+names = []
 for (first_name, last_name, hire_date) in cursor:
     if (hire_date >= hire_start) and  (hire_date <= hire_end): 
-        #print("{}, {} was hired on {:%d %b %Y}".format(
-    #last_name, first_name, hire_date))
-        i += 1
-print("Number of Rows =", i)
+      names.append(first_name)
+      
+print("Number of Rows affected =", len(names))
+print("Last Name in List: ", names[len(names) - 1])
 
 cursor.close()
+
