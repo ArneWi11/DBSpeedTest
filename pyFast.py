@@ -1,5 +1,6 @@
 import datetime
 import mysql.connector
+import sys
 from mysql.connector import errorcode
 import dbInfo
 
@@ -26,9 +27,11 @@ cursor.execute(query, (hire_start, hire_end))
 names =[]
 for (first_name, last_name, hire_date) in cursor:
     names.append(first_name)
-
-print("Number of Rows affected =", len(names))
-print("Last Name in List: ", names[len(names) - 1])
+    
+lenNames = len(names)
+next if (lenNames != 0) else sys.exit("no Values in query")
+print("Number of Rows affected =", lenNames)
+print("Last Name in List: ", names[round(lenNames/2)])
 
 cursor.close()
 
