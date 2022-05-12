@@ -16,8 +16,9 @@ example:
         $ time python3 pyFast.py
 
     output:
-        Number of Rows = 1514
+        Number of Rows affected = 1514
+        Last Name in List:  Hilari
 
-        real    0m0,213s
-        user    0m0,110s
-        sys     0m0,016s
+        real    0m0,223s
+        user    0m0,121s
+        sys     0m0,017s
