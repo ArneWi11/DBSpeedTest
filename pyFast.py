@@ -30,8 +30,9 @@ for (first_name, last_name, hire_date) in cursor:
     
 lenNames = len(names)
 next if (lenNames != 0) else sys.exit("no Values in query")
+print("Rows returned from query:", cursor.rowcount)
 print("Number of Rows affected =", lenNames)
-print("Last Name in List: ", names[round(lenNames/2)])
+print("Last Name in List: ", names[lenNames-1])
 
 cursor.close()
 
