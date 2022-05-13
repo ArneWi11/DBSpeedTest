@@ -13,7 +13,7 @@ time python3 python.py
 example:
 
     input:
-        $ time python3 pyFast.py
+        $ time python3 pySlow.py
 
     output:
         Rows returned from query: 300024
